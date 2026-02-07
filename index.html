@@ -3,116 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cute Open When Messages</title>
+    <title>Vinita's Open When Letters 💕</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <h1>✨ Open When ✨</h1>
-        <p>Click on an envelope to reveal a special message just for you! 💕</p>
-    </div>
+    <!-- Floating stickers background -->
+    <div class="stickers"></div>
     
-    <div class="envelopes-container">
-        <div class="envelope" data-message="1">
-            <div class="envelope-wrapper">
-                <div class="envelope-back"></div>
-                <div class="envelope-flap"></div>
-                <div class="envelope-label">You're Feeling Sad</div>
-                <div class="letter">
-                    <button class="close-btn">✕</button>
-                    <div class="letter-content">
-                        <h3>🌈 You're Amazing!</h3>
-                        <p>Remember, tough times don't last forever. You're stronger than you know, and brighter days are coming. Sending you a big virtual hug! 🤗</p>
-                    </div>
-                </div>
-            </div>
-            <div class="hearts"></div>
-        </div>
-        
-        <div class="envelope" data-message="2">
-            <div class="envelope-wrapper">
-                <div class="envelope-back"></div>
-                <div class="envelope-flap"></div>
-                <div class="envelope-label">You Need a Laugh</div>
-                <div class="letter">
-                    <button class="close-btn">✕</button>
-                    <div class="letter-content">
-                        <h3>😂 Why did the scarecrow win an award?</h3>
-                        <p>Because he was outstanding in his field! Keep smiling, you're the best! 😄</p>
-                    </div>
-                </div>
-            </div>
-            <div class="hearts"></div>
-        </div>
-        
-        <div class="envelope" data-message="3">
-            <div class="envelope-wrapper">
-                <div class="envelope-back"></div>
-                <div class="envelope-flap"></div>
-                <div class="envelope-label">It's Your Birthday</div>
-                <div class="letter">
-                    <button class="close-btn">✕</button>
-                    <div class="letter-content">
-                        <h3>🎉 Happy Birthday! 🎂</h3>
-                        <p>Today is all about YOU! Make it magical and celebrate every moment. You deserve all the happiness in the world! 🥳</p>
-                    </div>
-                </div>
-            </div>
-            <div class="hearts"></div>
-        </div>
-        
-        <div class="envelope" data-message="4">
-            <div class="envelope-wrapper">
-                <div class="envelope-back"></div>
-                <div class="envelope-flap"></div>
-                <div class="envelope-label">You're Stressed</div>
-                <div class="letter">
-                    <button class="close-btn">✕</button>
-                    <div class="letter-content">
-                        <h3>🧘‍♀️ Breathe Deeply</h3>
-                        <p>Take a moment to breathe. You've got this! One step at a time, and everything will fall into place. 💪</p>
-                    </div>
-                </div>
-            </div>
-            <div class="hearts"></div>
-        </div>
-        
-        <div class="envelope" data-message="5">
-            <div class="envelope-wrapper">
-                <div class="envelope-back"></div>
-                <div class="envelope-flap"></div>
-                <div class="envelope-label">You Miss Me</div>
-                <div class="letter">
-                    <button class="close-btn">✕</button>
-                    <div class="letter-content">
-                        <h3>💕 I'm Thinking of You</h3>
-                        <p>Distance means nothing when someone means everything. Can't wait to see you soon! Distance can't stop our love. 😘</p>
-                    </div>
-                </div>
-            </div>
-            <div class="hearts"></div>
-        </div>
-        
-        <div class="envelope" data-message="6">
-            <div class="envelope-wrapper">
-                <div class="envelope-back"></div>
-                <div class="envelope-flap"></div>
-                <div class="envelope-label">Just Because 💖</div>
-                <div class="letter">
-                    <button class="close-btn">✕</button>
-                    <div class="letter-content">
-                        <h3>🌟 You're Special!</h3>
-                        <p>Opening this because I wanted to remind you how incredibly wonderful you are. Keep shining bright! ✨</p>
-                    </div>
-                </div>
-            </div>
-            <div class="hearts"></div>
+    <!-- Music toggle -->
+    <button id="musicToggle">🎵</button>
+    
+    <!-- Background music -->
+    <audio id="bgMusic" loop>
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+    </audio>
+
+    <div class="container">
+        <header class="hero">
+            <h1 class="love-title">My dearest <span class="vinita-name">Vinita</span> 💌</h1>
+            <p class="subtitle">Open these when you need me most. I'm always here for you, forever. 💕</p>
+        </header>
+
+        <main class="cards" id="cards"></main>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle"></h2>
+            <p id="modalText"></p>
+            <button id="closeModal">Close 💖</button>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
