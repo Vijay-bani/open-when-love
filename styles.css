@@ -312,3 +312,33 @@ body {
     }
 }
 
+/* ===== ADD THIS NEW SECTION AT THE END ===== */
+.title-wrapper {
+    position: relative;
+    isolation: isolate;
+    display: inline-block;
+}
+
+.envelope-icon {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 1.2em;
+    filter: drop-shadow(0 3px 12px rgba(255, 107, 157, 0.8));
+    animation: bounce 2s infinite;
+    isolation: isolate;
+    line-height: 1;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* Fix blurry envelope */
+.love-title * {
+    filter: none !important;
+    backdrop-filter: none !important;
+}
+
+
