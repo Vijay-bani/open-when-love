@@ -57,9 +57,10 @@ body {
 
 #musicToggle:hover {
     transform: scale(1.1);
+    box-shadow: 0 15px 35px rgba(255, 107, 157, 0.4);
 }
 
-/* Hero section - NO BLUR ANYWHERE */
+/* Hero section */
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -70,13 +71,6 @@ body {
     text-align: center;
     margin-bottom: 50px;
     animation: fadeInUp 1s ease-out;
-    /* NO backdrop-filter here */
-}
-
-.title-wrapper {
-    position: relative;
-    display: inline-block;
-    isolation: isolate; /* Creates new stacking context */
 }
 
 .love-title {
@@ -86,10 +80,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin: 0;
+    margin: 0 0 15px 0;
     animation: glow 2s ease-in-out infinite alternate;
-    /* NO text-shadow or blur effects */
-    line-height: 1.1;
 }
 
 .vinita-name {
@@ -100,25 +92,6 @@ body {
     animation: shimmer 2s ease-in-out infinite;
 }
 
-/* SHARP ENVELOPE - BULLETPROOF */
-.envelope-icon {
-    display: inline-block !important;
-    margin-left: 15px !important;
-    font-size: 1.4em !important;
-    line-height: 1 !important;
-    vertical-align: middle !important;
-    animation: bounce 2s infinite !important;
-    /* FORCE NO BLUR */
-    filter: none !important;
-    -webkit-filter: none !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    transform: translateZ(0) !important;
-    isolation: isolate !important;
-    image-rendering: crisp-edges !important;
-    paint-order: stroke fill;
-}
-
 .subtitle {
     font-size: 1.3rem;
     color: rgba(255, 255, 255, 0.95);
@@ -127,7 +100,7 @@ body {
     margin: 20px auto 0;
 }
 
-/* Cards */
+/* Cards layout */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -151,7 +124,6 @@ body {
     position: relative;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    /* REMOVED backdrop-filter from cards too */
 }
 
 .card::before {
@@ -166,15 +138,23 @@ body {
 }
 
 .card:hover::before { left: 100%; }
-.card:hover { transform: translateY(-15px) scale(1.05); box-shadow: 0 35px 70px rgba(255, 107, 157, 0.4); }
+.card:hover { 
+    transform: translateY(-15px) scale(1.05); 
+    box-shadow: 0 35px 70px rgba(255, 107, 157, 0.4); 
+}
 .card:active { transform: scale(0.98); }
 
-/* Hearts */
-.hearts { position: fixed; pointer-events: none; z-index: 50; }
+/* Hearts effect */
+.hearts { 
+    position: fixed; 
+    pointer-events: none; 
+    z-index: 50; 
+}
 .heart {
     position: absolute;
     font-size: 20px;
     color: var(--accent);
+    pointer-events: none;
     animation: heartFloat 1.5s ease-out forwards;
 }
 
@@ -264,13 +244,7 @@ body {
     50% { filter: hue-rotate(10deg); }
 }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-12px); }
-    60% { transform: translateY(-6px); }
-}
-
-/* MOBILE */
+/* Mobile */
 @media (max-width: 768px) {
     .cards { grid-template-columns: 1fr; gap: 20px; padding: 10px; }
     .card { min-height: 160px; font-size: 1.1rem; }
