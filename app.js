@@ -12,23 +12,28 @@ const openWhenCards = [
         title: "💔 Open when you miss me, Vinita",
         message: `Hey my beautiful Vinita 💕
         
-I know the distance hurts sometimes,
-but every single day you fill my thoughts.
-You're my first thought in the morning,
-my last at night, and everything in between.
+I know the distance can feel heavy sometimes,
+but not for a second are you ever far from me.
+You live in my thoughts,
+in my heart,
+in every little moment of my day.
 
-I'm always with you, my love 💌`
+No matter where we are,
+I’m always yours 🤍`
     },
     {
         title: "😠 Open when you're angry at me",
-        message: `Even when you're mad at me, Vinita,
-even when you don't want to talk,
-even when I mess up...
+        message: `Even when you’re upset with me, Vinita,
+even when words feel hard,
+even when I make mistakes…
 
-I STILL CHOOSE YOU.
-Every single time. Every single day 🥺
+I’m not going anywhere.
+I choose you — not just when it’s easy,
+but especially when it’s not 🥺
 
-Forgive me, I'm learning to love you better.`
+Be patient with me,
+I’m learning, growing,
+and loving you better every day.`
     },
     {
         title: "😢 Open when you feel lonely",
@@ -39,30 +44,37 @@ You have:
 ✨ My patience endlessly  
 ✨ My belief in you infinitely
 
-I'm right there in every heartbeat 💖`
+You carry my heart with you, always 💖`
     },
     {
         title: "🌙 Open when you can't sleep",
         message: `Close your eyes, Vinita 🌟
 
-Breathe slowly...
-Feel my hand holding yours tightly.
-Hear my voice whispering you're safe.
+Hey Vinita 🌙
 
-Sleep well, my love. 
-I'm watching over your dreams tonight 💤💕`
+Slow your breathing…
+feel the calm.
+Imagine my arms around you,
+My fingers gently holding yours.
+
+You’re safe.
+You’re loved.
+Let your mind rest now.
+
+Sleep peacefully, my love 💤💞`
     },
     {
         title: "❓ Open when you doubt us",
-        message: `Love isn't perfect moments, Vinita.
-It's choosing each other through messy ones.
+        message: `Vinita, love isn’t about perfection.
+It’s about choosing each other
+even when things feel uncertain.
 
-And through every storm, every doubt,
-every challenge life throws...
+Through doubts, distance, and challenges,
+my choice never changes.
 
-I choose you. Always. Forever 💫
-
-We're unbreakable together 💪💖`
+It’s you.
+It has always been you.
+And it always will be 💫🤍`
     },
     {
         title: "💪 Open when you need motivation",
@@ -85,8 +97,7 @@ Today is YOUR day, beautiful!
 Make it magical, eat cake,
 dance like nobody's watching!
 
-I wish I could celebrate with you...
-but know I'm sending you infinite love! 🥳💝`
+I'm sending you infinite love! 🥳💝`
     },
     {
         title: "💖 Open just because I love you",
@@ -95,6 +106,7 @@ but know I'm sending you infinite love! 🥳💝`
 Just wanted to remind my favorite person:
 You're my sunshine, my safe place,
 my reason to smile every day.
+And my reason to live.
 
 Thank you for being YOU.
 I love you more than words... 💖✨`
@@ -196,3 +208,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }, index * 150);
     });
 });
+
