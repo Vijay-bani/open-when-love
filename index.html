@@ -17,9 +17,11 @@
     <button id="musicToggle">🎵</button>
     
     <!-- Background music -->
-    <audio id="bgMusic" loop>
-        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
-    </audio>
+    <audio id="bgMusic" loop preload="auto">
+    <source src="song.mp3" type="audio/mpeg">
+    <source src="song.mp3" type="audio/mp3">
+    Your browser does not support audio.
+</audio>
 
     <div class="container">
         <header class="hero">
@@ -42,4 +44,5 @@
     <script src="app.js"></script>
 </body>
 </html>
+
 
