@@ -3,32 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Open when you miss me 💙</title>
+  <title>For Vinita 💖</title>
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<!-- Floating sticker background -->
-<div class="stickers"></div>
-
-<!-- Music toggle -->
-<button id="musicToggle" aria-label="Toggle music">🎵</button>
-<audio id="bgMusic" src="music/song.mp3" loop></audio>
-
-<!-- Cards container -->
-<main class="cards" id="cards"></main>
-
-<!-- Modal -->
-<section class="modal" id="modal">
-  <div class="modal-content">
-    <p id="modalText"></p>
-    <button id="closeModal">Close</button>
+  <!-- Background stickers -->
+  <div class="stickers">
+    <span>🍫</span>
+    <span>🌸</span>
+    <span>💌</span>
+    <span>🌷</span>
+    <span>🍓</span>
   </div>
-</section>
 
-<script src="app.js"></script>
+  <!-- Main container -->
+  <main class="container">
+
+    <h1 class="title">Vinita 💕</h1>
+
+    <section class="cards-grid">
+      <div class="card" data-message="You are my safest place. No matter how far we are, my heart always finds you. ❤️">
+        Open when you miss me
+      </div>
+
+      <div class="card" data-message="Even on your worst days, you are still the most beautiful person I know. 🌸">
+        Open when you feel low
+      </div>
+
+      <div class="card" data-message="I choose you. Today, tomorrow, and every lifetime after this. 💍">
+        Open when you doubt us
+      </div>
+
+      <div class="card" data-message="I’m proud of you more than you’ll ever know. Keep going, my love. 🌷">
+        Open when you need motivation
+      </div>
+
+      <div class="card" data-message="I know I mess up sometimes. But loving you is something I’ll never do wrong. 💔➡️❤️">
+        Open when you’re angry at me
+      </div>
+
+      <div class="card" data-message="You are my favorite thought before sleep and my first smile every morning. 🌙✨">
+        Open anytime
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <p id="popupText"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
-
