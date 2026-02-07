@@ -1,64 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>For Vinita 💖</title>
-
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Open When Messages</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Background stickers -->
-  <div class="stickers">
-    <span>🍫</span>
-    <span>🌸</span>
-    <span>💌</span>
-    <span>🌷</span>
-    <span>🍓</span>
-  </div>
-
-  <!-- Main container -->
-  <main class="container">
-
-    <h1 class="title">Vinita 💕</h1>
-
-    <section class="cards-grid">
-      <div class="card" data-message="You are my safest place. No matter how far we are, my heart always finds you. ❤️">
-        Open when you miss me
-      </div>
-
-      <div class="card" data-message="Even on your worst days, you are still the most beautiful person I know. 🌸">
-        Open when you feel low
-      </div>
-
-      <div class="card" data-message="I choose you. Today, tomorrow, and every lifetime after this. 💍">
-        Open when you doubt us
-      </div>
-
-      <div class="card" data-message="I’m proud of you more than you’ll ever know. Keep going, my love. 🌷">
-        Open when you need motivation
-      </div>
-
-      <div class="card" data-message="I know I mess up sometimes. But loving you is something I’ll never do wrong. 💔➡️❤️">
-        Open when you’re angry at me
-      </div>
-
-      <div class="card" data-message="You are my favorite thought before sleep and my first smile every morning. 🌙✨">
-        Open anytime
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Popup -->
-  <div class="popup" id="popup">
-    <div class="popup-content">
-      <span class="close">&times;</span>
-      <p id="popupText"></p>
+    <div class="header">
+        <h1>✨ Open When ✨</h1>
+        <p>Click on an envelope to reveal a special message just for you! 💕</p>
     </div>
-  </div>
+    
+    <div class="envelopes-container">
+        <div class="envelope" data-message="1">
+            <div class="envelope-wrapper">
+                <div class="envelope-back"></div>
+                <div class="envelope-flap"></div>
+                <div class="envelope-label">You're Feeling Sad</div>
+                <div class="letter">
+                    <button class="close-btn">✕</button>
+                    <div class="letter-content">
+                        <h3>🌈 You're Amazing!</h3>
+                        <p>Remember, tough times don't last forever. You're stronger than you know, and brighter days are coming. Sending you a big virtual hug! 🤗</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hearts"></div>
+        </div>
+        
+        <div class="envelope" data-message="2">
+            <div class="envelope-wrapper">
+                <div class="envelope-back"></div>
+                <div class="envelope-flap"></div>
+                <div class="envelope-label">You Need a Laugh</div>
+                <div class="letter">
+                    <button class="close-btn">✕</button>
+                    <div class="letter-content">
+                        <h3>😂 Why did the scarecrow win an award?</h3>
+                        <p>Because he was outstanding in his field! Keep smiling, you're the best! 😄</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hearts"></div>
+        </div>
+        
+        <div class="envelope" data-message="3">
+            <div class="envelope-wrapper">
+                <div class="envelope-back"></div>
+                <div class="envelope-flap"></div>
+                <div class="envelope-label">It's Your Birthday</div>
+                <div class="letter">
+                    <button class="close-btn">✕</button>
+                    <div class="letter-content">
+                        <h3>🎉 Happy Birthday! 🎂</h3>
+                        <p>Today is all about YOU! Make it magical and celebrate every moment. You deserve all the happiness in the world! 🥳</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hearts"></div>
+        </div>
+        
+        <div class="envelope" data-message="4">
+            <div class="envelope-wrapper">
+                <div class="envelope-back"></div>
+                <div class="envelope-flap"></div>
+                <div class="envelope-label">You're Stressed</div>
+                <div class="letter">
+                    <button class="close-btn">✕</button>
+                    <div class="letter-content">
+                        <h3>🧘‍♀️ Breathe Deeply</h3>
+                        <p>Take a moment to breathe. You've got this! One step at a time, and everything will fall into place. 💪</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hearts"></div>
+        </div>
+        
+        <div class="envelope" data-message="5">
+            <div class="envelope-wrapper">
+                <div class="envelope-back"></div>
+                <div class="envelope-flap"></div>
+                <div class="envelope-label">You Miss Me</div>
+                <div class="letter">
+                    <button class="close-btn">✕</button>
+                    <div class="letter-content">
+                        <h3>💕 I'm Thinking of You</h3>
+                        <p>Distance means nothing when someone means everything. Can't wait to see you soon! Distance can't stop our love. 😘</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hearts"></div>
+        </div>
+        
+        <div class="envelope" data-message="6">
+            <div class="envelope-wrapper">
+                <div class="envelope-back"></div>
+                <div class="envelope-flap"></div>
+                <div class="envelope-label">Just Because 💖</div>
+                <div class="letter">
+                    <button class="close-btn">✕</button>
+                    <div class="letter-content">
+                        <h3>🌟 You're Special!</h3>
+                        <p>Opening this because I wanted to remind you how incredibly wonderful you are. Keep shining bright! ✨</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hearts"></div>
+        </div>
+    </div>
 
-  <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
