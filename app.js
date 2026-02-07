@@ -9,8 +9,8 @@ const cardsContainer = document.getElementById("cards");
 /* Vinita's special Open When cards 💕 */
 const openWhenCards = [
     {
-        title: "💔 Open when you miss me, Vinita",
-        message: `Hey my beautiful Vinita 💕
+        title: "💔 Open when you miss me",
+        message: `Hey my beautiful baby jaanu 💕
         
 I know the distance can feel heavy sometimes,
 but not for a second are you ever far from me.
@@ -23,7 +23,7 @@ I’m always yours 🤍`
     },
     {
         title: "😠 Open when you're angry at me",
-        message: `Even when you’re upset with me, Vinita,
+        message: `Even when you’re upset with me, my love,
 even when words feel hard,
 even when I make mistakes…
 
@@ -37,7 +37,7 @@ and loving you better every day.`
     },
     {
         title: "😢 Open when you feel lonely",
-        message: `You're never alone, my sweet Vinita 🤍
+        message: `You're never alone, my sweetheart 🤍
 
 You have:
 ✨ My heart completely
@@ -48,9 +48,7 @@ You carry my heart with you, always 💖`
     },
     {
         title: "🌙 Open when you can't sleep",
-        message: `Close your eyes, Vinita 🌟
-
-Hey Vinita 🌙
+        message: `Close your eyes, my sleepyhead 🌟
 
 Slow your breathing…
 feel the calm.
@@ -65,7 +63,7 @@ Sleep peacefully, my love 💤💞`
     },
     {
         title: "❓ Open when you doubt us",
-        message: `Vinita, love isn’t about perfection.
+        message: `Baby, love isn’t about perfection.
 It’s about choosing each other
 even when things feel uncertain.
 
@@ -78,7 +76,7 @@ And it always will be 💫🤍`
     },
     {
         title: "💪 Open when you need motivation",
-        message: `Listen up, Vinita - YOU ARE INCREDIBLE! ✨
+        message: `Listen up, my baby girl - YOU ARE INCREDIBLE! ✨
 
 You're stronger than your fears,
 braver than you realize,
@@ -90,7 +88,7 @@ Keep shining, superstar! 🌟
 You've got this (and I've got you) 💕`
     },
     {
-        title: "🎂 Open on your birthday, Vinita!",
+        title: "🎂 Open on your birthday!",
         message: `HAPPY BIRTHDAY TO MY FAVORITE HUMAN! 🎉🎂
 
 Today is YOUR day, beautiful!
@@ -101,7 +99,7 @@ I'm sending you infinite love! 🥳💝`
     },
     {
         title: "💖 Open just because I love you",
-        message: `No reason needed, Vinita 💕
+        message: `No reason needed, my pineapple 💕
 
 Just wanted to remind my favorite person:
 You're my sunshine, my safe place,
@@ -208,4 +206,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }, index * 150);
     });
 });
+
 
