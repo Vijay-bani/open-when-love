@@ -79,6 +79,12 @@ body {
     animation: fadeInUp 1s ease-out;
 }
 
+.title-wrapper {
+    position: relative;
+    isolation: isolate;
+    display: inline-block;
+}
+
 .love-title {
     font-family: 'Dancing Script', cursive;
     font-size: clamp(2.5rem, 8vw, 5rem);
@@ -89,7 +95,6 @@ body {
     margin-bottom: 15px;
     animation: glow 2s ease-in-out infinite alternate;
     text-shadow: none;
-    position: relative;
 }
 
 .vinita-name {
@@ -100,18 +105,16 @@ body {
     animation: shimmer 2s ease-in-out infinite;
 }
 
-@keyframes shimmer {
-    0%, 100% { filter: hue-rotate(0deg) drop-shadow(0 0 10px rgba(255, 102, 178, 0.6)); }
-    50% { filter: hue-rotate(10deg) drop-shadow(0 0 20px rgba(255, 102, 178, 0.8)); }
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 182, 193, 0.6);
-    }
-    to {
-        text-shadow: 0 0 30px rgba(255, 255, 255, 0.9), 0 0 50px rgba(255, 105, 180, 0.7);
-    }
+.envelope-icon {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 1.2em;
+    filter: drop-shadow(0 3px 12px rgba(255, 107, 157, 0.8));
+    animation: bounce 2s infinite;
+    isolation: isolate;
+    line-height: 1;
+    filter: none !important;
+    backdrop-filter: none !important;
 }
 
 .subtitle {
@@ -287,11 +290,30 @@ body {
 
 @keyframes glow {
     from {
-        text-shadow: 0 0 20px rgba(255, 107, 157, 0.5);
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 182, 193, 0.6);
     }
     to {
-        text-shadow: 0 0 30px rgba(255, 107, 157, 0.8), 0 0 40px rgba(255, 107, 157, 0.4);
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.9), 0 0 50px rgba(255, 105, 180, 0.7);
     }
+}
+
+@keyframes shimmer {
+    0%, 100% { filter: hue-rotate(0deg) drop-shadow(0 0 10px rgba(255, 102, 178, 0.6)); }
+    50% { filter: hue-rotate(10deg) drop-shadow(0 0 20px rgba(255, 102, 178, 0.8)); }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* Fix blurry envelope - CRITICAL */
+.love-title *, .envelope-icon {
+    filter: none !important;
+    backdrop-filter: none !important;
+    -webkit-filter: none !important;
+    -webkit-backdrop-filter: none !important;
 }
 
 /* Mobile */
@@ -311,34 +333,3 @@ body {
         margin-bottom: 30px;
     }
 }
-
-/* ===== ADD THIS NEW SECTION AT THE END ===== */
-.title-wrapper {
-    position: relative;
-    isolation: isolate;
-    display: inline-block;
-}
-
-.envelope-icon {
-    display: inline-block;
-    margin-left: 15px;
-    font-size: 1.2em;
-    filter: drop-shadow(0 3px 12px rgba(255, 107, 157, 0.8));
-    animation: bounce 2s infinite;
-    isolation: isolate;
-    line-height: 1;
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-10px); }
-    60% { transform: translateY(-5px); }
-}
-
-/* Fix blurry envelope */
-.love-title * {
-    filter: none !important;
-    backdrop-filter: none !important;
-}
-
-
