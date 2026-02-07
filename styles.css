@@ -108,23 +108,43 @@ body {
     padding: 20px 0;
 }
 
-/* DESKTOP ONLY: Center last 2 cards */
+/* DESKTOP ONLY: Perfect centering between 4th/5th & 5th/6th */
 @media (min-width: 992px) {
     .cards {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         gap: 40px;
         max-width: 1200px;
         margin: 0 auto;
+        justify-items: center;
     }
     
-    /* Perfectly center last 2 cards on DESKTOP */
-    .card:nth-last-child(2) { 
-        grid-column: 2; 
+    /* Cards 1-6: Normal 3x2 grid */
+    .card:nth-child(1) { grid-column: 1; grid-row: 1; }
+    .card:nth-child(2) { grid-column: 2; grid-row: 1; }
+    .card:nth-child(3) { grid-column: 3; grid-row: 1; }
+    .card:nth-child(4) { grid-column: 1; grid-row: 2; }
+    .card:nth-child(5) { grid-column: 2; grid-row: 2; }
+    .card:nth-child(6) { grid-column: 3; grid-row: 2; }
+    
+    /* Card 7: MIDDLE of 4th & 5th (column 1.5 position) */
+    .card:nth-child(7) { 
+        grid-column: 1 / span 2; 
+        grid-row: 3;
+        justify-self: center;
+        max-width: 320px;
     }
-    .card:nth-last-child(1) { 
-        grid-column: 3; 
+    
+    /* Card 8: MIDDLE of 5th & 6th (column 2.5 position) */
+    .card:nth-child(8) { 
+        grid-column: 2 / span 2; 
+        grid-row: 3;
+        justify-self: center;
+        max-width: 320px;
     }
 }
+
 
 /* Individual card */
 .card {
@@ -278,3 +298,4 @@ body {
         margin-bottom: 30px; 
     }
 }
+
