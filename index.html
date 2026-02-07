@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Open When 💙</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- Floating sticker background -->
+<div class="stickers"></div>
+
+<!-- Music toggle -->
+<button id="musicToggle" aria-label="Toggle music">🎵</button>
+<audio id="bgMusic" src="music/song.mp3" loop></audio>
+
+<!-- Cards container -->
+<main class="cards" id="cards"></main>
+
+<!-- Modal -->
+<section class="modal" id="modal">
+  <div class="modal-content">
+    <p id="modalText"></p>
+    <button id="closeModal">Close</button>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
